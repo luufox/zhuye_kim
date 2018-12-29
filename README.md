@@ -30,6 +30,7 @@ python3 manage.py makemigrations --merge
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
+（如果是python2  3共存 前面替换成 pyhton3.6  详细版本号）
 
 - 导入zhuye.sql
 
