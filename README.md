@@ -36,8 +36,11 @@ python3 manage.py migrate
 
 - 运行网站
 ```bash
-screen -S zhuye
+tmux new -s wycf 
 python3 manage.py runserver 127.0.0.1:8001
+
+ctrl +b  d
+tmux attach-session -t wycf
  ```
  	 
 - Nginx反向代理
