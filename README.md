@@ -1,9 +1,7 @@
 # zhuye_kim
 仿zhuye.kim的简单导航程序
 
-![zhuye.kim(1).png](https://www.moerats.com/usr/picture/zhuye.kim(1).png)
 
-![zhuye.kim(2).png](https://www.moerats.com/usr/picture/zhuye.kim(2).png)
 
 #### 使用说明 ####
 
@@ -12,7 +10,31 @@
 
 Centos7系统安装Python3可以参考文章：http://blog.51cto.com/wenguonideshou/2083301
 
-```bash
+
+
+配置好Python3.6和pip3 安装EPEL和IUS软件源
+```
+yum install epel-release -y
+yum install https://centos7.iuscommunity.org/ius-release.rpm -y
+```
+安装Python3.6
+```
+yum install python36u -y
+```
+创建python3连接符
+```
+ln -s /bin/python3.6 /bin/python3
+```
+安装pip3
+```
+yum install python36u-pip -y
+```
+创建pip3链接符
+```
+ln -s /bin/pip3.6 /bin/pip3
+```
+```
+bash
 yum install git screen -y
 pip3 install django pymysql pillow
 ```
